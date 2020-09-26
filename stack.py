@@ -1,6 +1,6 @@
-# Array-based implementation of stack data structure
+# List-based implementation of stack data structure
 class Stack:
-	# Initialize the stack as an empty array
+	# Initialize the stack as an empty list
 	def __init__(self):
 		self.stack = []
 
@@ -8,11 +8,11 @@ class Stack:
 	def isEmpty(self):
 		return len(self.stack) == 0
 
-	# Append a new value at the end of the array, i.e., on the top of the stack
+	# Append a new value at the end of the list, i.e., on the top of the stack
 	def push(self, val):
 		self.stack.append(val)
 
-	# Remove the top element of the stack and returns it, if the stack is not empty
+	# Remove the top element of the stack and return it, if the stack is not empty
 	def pop(self):
 		if not self.isEmpty():
 			return self.stack.pop()
